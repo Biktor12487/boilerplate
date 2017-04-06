@@ -26,6 +26,7 @@
 .callBackHeader {
   margin-bottom: -10px;
   background-color: #fff;
+  box-shadow: 0px 9px 23px -1px rgba(0, 0, 0, 0.17);
 }
 
 .callBackHeader h3 {
@@ -154,4 +155,69 @@
 
 .workProcess .workProcessCard4 {
   background-color: #4eb2f7;
+}
+
+.footer {
+  background-color: #f7f7f7;
+}
+
+.footer .keyCallBack {
+  font: 400 16px Tahoma;
+  border: 1px solid #eaeaea;
+  background-color: #fdfdfd;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 40px;
+  width: 240px;
+  margin: 50px auto;
+  display: block;
+  transition-duration: 0.5s;
+}
+
+.footer .keyCallBack:hover {
+  box-shadow: 0px 3px 23px -1px rgba(0, 0, 0, 0.17);
+}
+
+.footer .socLink {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  background-color: #d3d3d3;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.footer .socLink:hover {
+  box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.17);
+  background-color: #ff6e47;
+}
+
+.footer .socLinksRow {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.footer .copyright {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer .socAndCopyRow {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #040404;
+  font: 400 17px Tahoma;
 }
