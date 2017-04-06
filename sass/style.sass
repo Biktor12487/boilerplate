@@ -1,13 +1,51 @@
-@import "../bower_components/susy/sass/susy"
-@import "../bower_components/breakpoint-sass/stylesheets/breakpoint"
-
-@import "sass-includes/_var.sass"
-
-@import "sass-includes/_reset.scss"
-
-@import "sass-includes/_modal-window.sass"
-@import "sass-includes/_grid.sass"
-
-@import "sass-includes/_base.sass"
-@import "sass-includes/_header.sass"
-@import "sass-includes/_footer.sass"
+$def-color-fw: #fc6744
+// default color first word
+$def-color-t: #626262
+.navbar-toggle span
+	background-color: #706b73
+.header
+	background: #f5f5f5
+.navbar-brand > img
+	display:block
+.siteName 
+	margin-top: 140px
+	text-align: center
+	color: $def-color-t
+	span
+		color: $def-color-fw
+.siteAbout
+	text-align: center
+	margin: 25px 0 105px
+	font: 400 16px Tahoma
+	color: $def-color-t
+.callBackHeader
+	background-color: #fff
+	h3
+		text-align: center
+		margin-bottom: 40px
+		color: #211a18
+		font: 400px 20px Tahoma
+		span
+			color: $def-color-fw
+	input
+		outline: 0
+		border: 0
+		border-bottom: 1px solid #c7c7c7
+		margin-bottom: 20px
+		font: 400 15px Tahoma
+		padding: 5px 0
+	textarea
+		outline: 0
+		border: 0
+		border-bottom: 1px solid #c7c7c7
+		margin-bottom: 20px;
+		height: 90px
+		resize: none
+		font: 400 15px Tahoma
+		padding: 5px 0
+	input[type="submit"]
+		background-color: #ff5c36
+		color: #fff
+		font: 400 16px Tahoma
+		padding: 20px 0
+		border-radius: 40px
