@@ -159,6 +159,7 @@
 
 .footer {
   background-color: #f7f7f7;
+  padding-bottom: 55px;
 }
 
 .footer .keyCallBack {
@@ -220,4 +221,43 @@
   align-items: center;
   color: #040404;
   font: 400 17px Tahoma;
+}
+
+.partnersSector {
+  height: 205px;
+  background-color: #fbfbfb;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.partnersSector img {
+  opacity: 0.3;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.partnersSector img:hover {
+  opacity: 1;
+}
+
+.clientSlaid h1 {
+  margin-top: 135px;
+  text-align: center;
+}
+
+.clientSlaid h1 span {
+  color: #fc6744;
+}
+
+.clientSlaid h5 {
+  margin-bottom: 95px;
+  text-align: center;
+  color: #414141;
+  font: 400 16px Tahoma;
+}
+
+.owl-item {
+  width: 1000px;
 }
