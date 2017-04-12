@@ -1,263 +1,360 @@
-.navbar-toggle span {
-  background-color: #706b73;
+@font-face {
+  font-family: anja-eliane;
+  src: url("../fonts/anja-eliane.ttf");
+}
+
+@font-face {
+  font-family: TTDrugs-Thin;
+  src: url("../fonts/TTDrugs-Thin.otf");
+}
+
+.section {
+  clear: both;
+  width: 100%;
+  float: left;
+}
+
+.container {
+  width: 1190px;
+  margin: 0 auto;
 }
 
 .header {
-  background: #f5f5f5;
+  padding: 50px 0;
 }
 
-.siteName {
-  margin-top: 140px;
-  text-align: center;
-  color: #626262;
+.header > .container {
+  background: url("../images/paperBg.png") no-repeat center;
+  background-size: contain;
+  height: 600px;
 }
 
-.siteName span {
-  color: #fc6744;
-}
-
-.siteAbout {
-  text-align: center;
-  margin: 25px 0 105px;
-  font: 400 16px Tahoma;
-  color: #626262;
-}
-
-.callBackHeader {
-  margin-bottom: -10px;
-  background-color: #fff;
-  box-shadow: 0px 9px 23px -1px rgba(0, 0, 0, 0.17);
-}
-
-.callBackHeader h3 {
-  text-align: center;
-  margin-bottom: 40px;
-  color: #211a18;
-  font: 400px 20px Tahoma;
-}
-
-.callBackHeader h3 span {
-  color: #fc6744;
-}
-
-.callBackHeader input {
-  outline: 0;
-  border: 0;
-  border-bottom: 1px solid #c7c7c7;
-  margin-bottom: 20px;
-  font: 400 15px Tahoma;
-  padding: 5px 0;
-}
-
-.callBackHeader textarea {
-  outline: 0;
-  border: 0;
-  border-bottom: 1px solid #c7c7c7;
-  margin-bottom: 20px;
-  height: 90px;
-  resize: none;
-  font: 400 15px Tahoma;
-  padding: 5px 0;
-}
-
-.callBackHeader input[type="submit"] {
-  background-color: #ff5c36;
-  color: #fff;
-  font: 400 16px Tahoma;
-  padding: 20px 0;
-  border-radius: 40px;
-}
-
-.workProcess {
-  padding-bottom: 175px;
-}
-
-.workProcess h1 {
-  margin-top: 135px;
-  text-align: center;
-}
-
-.workProcess h1 span {
-  color: #fc6744;
-}
-
-.workProcess h5 {
-  margin-bottom: 95px;
-  text-align: center;
-  color: #414141;
-  font: 400 16px Tahoma;
-}
-
-.workProcess .cardProcessWorkRow {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-}
-
-.workProcess .cardWorkProcess {
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.workProcess .cardWorkProcess > div {
-  padding-bottom: 50px;
-}
-
-.workProcess .cardWorkProcess > div .iconWorkProcess {
-  margin: 50px auto 25px;
-}
-
-.workProcess .cardWorkProcess > div h2 {
-  text-align: center;
-  font: 400 20px Tahoma;
-  color: #fff;
-}
-
-.workProcess .cardWorkProcess > div .text {
-  text-align: center;
-  font: 400 15px Tahoma;
-  color: #fff;
-  width: 90%;
-}
-
-.workProcess .cardWorkProcess > div button {
-  width: 85%;
-  background-color: #fff;
-  border: 0;
-  font: 400 14px Tahoma;
-  padding: 20px 0;
-  border-radius: 40px;
-  position: absolute;
-  bottom: -25px;
-  box-shadow: 0px 9px 23px -1px rgba(0, 0, 0, 0.17);
-}
-
-.workProcess .cardWorkProcess > div > div {
+.header > .container > div {
   width: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
 }
 
-.workProcess .workProcessCard1 {
-  background-color: #4eb2f7;
-}
-
-.workProcess .workProcessCard2 {
-  background-color: #c049f8;
-}
-
-.workProcess .workProcessCard3 {
-  background-color: #817eff;
-}
-
-.workProcess .workProcessCard4 {
-  background-color: #4eb2f7;
-}
-
-.footer {
-  background-color: #f7f7f7;
-  padding-bottom: 55px;
-}
-
-.footer .keyCallBack {
-  font: 400 16px Tahoma;
-  border: 1px solid #eaeaea;
-  background-color: #fdfdfd;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-radius: 40px;
-  width: 240px;
-  margin: 50px auto;
+.header form {
   display: block;
-  transition-duration: 0.5s;
+  margin: 0 auto;
+  padding: 30px 0 30px 0;
+  width: 450px;
+  height: 590px;
+  text-align: center;
+  background: url("../images/copyBookBg.png") no-repeat center;
+  background-size: 100%;
 }
 
-.footer .keyCallBack:hover {
-  box-shadow: 0px 3px 23px -1px rgba(0, 0, 0, 0.17);
+.header form span {
+  display: block;
+  font: 400 14px Arial;
+  text-align: center;
+  color: #b3b3b3;
+  padding: 20px 0 15px;
 }
 
-.footer .socLink {
-  height: 50px;
+.header form select {
+  width: 280px;
+  border: 1px solid #ebebeb;
+  font: 400 14px Arial;
+  color: #1f1f1f;
+  padding: 15px 5px;
+}
+
+.keyCalculate {
+  width: 280px;
+  padding: 15px 0;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: none;
+  font: 400 18px anja-eliane;
+  text-transform: uppercase;
+  background-color: #28a2ef;
+  color: #fff;
+  cursor: pointer;
+}
+
+.keyCalculate:hover {
+  opacity: .9;
+}
+
+.inputPage {
+  display: -ms-flexbox;
+  display: flex;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.inputPage div {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  text-align: center;
+  cursor: pointer;
   width: 50px;
-  border-radius: 100%;
+  height: 50px;
+  font: 600 26px sans-serif;
+  background-color: #d4d4d4;
+  color: #fff;
+}
+
+.inputPage div:hover {
+  opacity: .9;
+}
+
+.inputPage input {
+  padding: 15px 0px;
+  width: 180px;
+  text-align: center;
+  font: 400 14px Arial;
+  color: #1f1f1f;
+  border: 1px solid #d4d4d4;
+}
+
+.inputDeadline {
+  display: -ms-flexbox;
+  display: flex;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.inputDeadline div {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  background-color: #d3d3d3;
+  text-align: center;
   cursor: pointer;
-  transition-duration: 0.5s;
+  width: 50px;
+  height: 50px;
+  background-color: #d4d4d4;
+  color: #fff;
 }
 
-.footer .socLink:hover {
-  box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.17);
-  background-color: #ff6e47;
+.inputDeadline div img {
+  width: 50%;
 }
 
-.footer .socLinksRow {
+.inputDeadline div:hover {
+  opacity: .9;
+}
+
+.inputDeadline input {
+  padding: 15px 0px;
+  width: 230px;
+  text-align: center;
+  font: 400 14px Arial;
+  color: #1f1f1f;
+  border: 1px solid #d4d4d4;
+}
+
+.totalPrice b {
+  font: 400 45px TTDrugs-Thin;
+}
+
+.getYour > .container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.getYour > .container > div {
+  width: 33%;
+  float: left;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.sectorGetYour1 .cardsGetYour {
+  float: left;
+  margin: 80px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.sectorGetYour1 .cardsGetYour > div {
+  float: left;
+  width: 255px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.sectorGetYour1 .cardsGetYour {
+  float: left;
+}
+
+.sectorGetYour1 .cardsGetYour h3 {
+  font: 400 20px Arial;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.sectorGetYour1 .textGetYor {
+  font: 400 14px Arial;
+  text-align: right;
+}
+
+.sectorGetYour1 .cardsGetYour img {
+  float: right;
+}
+
+.sectorGetYour1 .cardsGetYour span {
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+  display: block;
+  float: left;
+}
+
+.cardGetYour1 {
+  background-image: url("../images/getYourIcon1.png");
+}
+
+.cardGetYour2 {
+  background-image: url("../images/getYourIcon2.png");
+}
+
+.cardGetYour3 {
+  background-image: url("../images/getYourIcon3.png");
+}
+
+.cardGetYour4 {
+  background-image: url("../images/getYourIcon4.png");
+}
+
+.sectorGetYour3 .cardsGetYour {
+  float: left;
+  margin: 80px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.sectorGetYour3 .cardsGetYour > div {
+  float: left;
+  width: 255px;
+  margin-left: 20px;
+  box-sizing: border-box;
+}
+
+.sectorGetYour3 .cardsGetYour {
+  float: left;
+}
+
+.sectorGetYour3 .cardsGetYour h3 {
+  font: 400 20px Arial;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.sectorGetYour3 .textGetYor {
+  font: 400 14px Arial;
+  text-align: left;
+}
+
+.sectorGetYour3 .cardsGetYour img {
+  float: right;
+}
+
+.sectorGetYour3 .cardsGetYour span {
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+  display: block;
+  float: left;
+}
+
+.sectorGetYour2 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.getYourTitle {
+  display: block;
+  font: 400 36px TTDrugs-Thin;
+  text-align: center;
+  color: #adacac;
+}
+
+.help {
+  padding: 70px 0;
+}
+
+.help h2 {
+  text-align: center;
+  font: 400 36px TTDrugs-Thin;
+  color: #4b4c4c;
+}
+
+.textHelp {
+  width: 60%;
+  margin: 0 auto;
+  padding: 40px 40px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font: 400 20px Arial;
+  text-align: center;
+  color: #fff;
+  background-color: #28a2ef;
+}
+
+.content > .container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.footer .copyright {
-  width: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
+.cardsContent {
+  width: 555px;
+  max-width: 50%;
+  padding: 40px;
+  margin: 40px 20px;
+  box-sizing: border-box;
+  float: left;
+  background-image: url("../images/paperPage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.footer .socAndCopyRow {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  color: #040404;
-  font: 400 17px Tahoma;
+.cardsContent h2 {
+  font: 400 21px TTDrugs-Thin;
+  color: #000;
 }
 
-.partnersSector {
-  height: 205px;
-  background-color: #fbfbfb;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.partnersSector img {
-  opacity: 0.3;
+.cardsContent button {
+  margin-top: 50px;
+  padding: 10px 40px;
+  border-radius: 5px;
+  border: none;
+  font: 400 21px TTDrugs-Thin;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #6bcdff;
   cursor: pointer;
-  transition-duration: 0.5s;
 }
 
-.partnersSector img:hover {
-  opacity: 1;
+.cardsContent button:hover {
+  opacity: .8;
 }
 
-.clientSlaid h1 {
-  margin-top: 135px;
-  text-align: center;
-}
-
-.clientSlaid h1 span {
-  color: #fc6744;
-}
-
-.clientSlaid h5 {
-  margin-bottom: 95px;
-  text-align: center;
-  color: #414141;
-  font: 400 16px Tahoma;
-}
-
-.owl-item {
-  width: 1000px;
+.textCardContent {
+  max-width: 90%;
+  font: 400 18px Arial;
 }

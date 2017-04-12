@@ -1,170 +1,240 @@
-$def-color-fw: #fc6744
-// default color first word
-$def-color-t: #626262
-.navbar-toggle span
-	background-color: #706b73
+@font-face
+	font-family: anja-eliane
+	src: url("../fonts/anja-eliane.ttf")
+@font-face
+	font-family: TTDrugs-Thin
+	src: url("../fonts/TTDrugs-Thin.otf")
+$one-font: anja-eliane
+$two-font: TTDrugs-Thin
+.section
+	clear: both
+	width: 100%
+	float: left
+.container
+	width: 1190px
+	margin: 0 auto
 .header
-	background: #f5f5f5
-.navbar-brand > img
-	display:block
-.siteName 
-	margin-top: 140px
+	margin-top: - 40px
+	padding: 50px 0
+.header > .container
+	background: url("../images/paperBg.png") no-repeat center
+	background-size: contain
+	height: 600px
+.header > .container > div
+	width: 100%
+.header form
+	display: block
+	margin: 0 auto
+	padding: 30px 0 30px 0
+	width: 450px
+	height: 590px
 	text-align: center
-	color: $def-color-t
-	span
-		color: $def-color-fw
-.siteAbout
+	background: url("../images/copyBookBg.png") no-repeat center
+	background-size: 100%
+.header form span
+	display: block
+	font: 400 14px Arial
 	text-align: center
-	margin: 25px 0 105px
-	font: 400 16px Tahoma
-	color: $def-color-t
-.callBackHeader
-	margin-bottom: -10px
-	background-color: #fff
-	box-shadow: 0px 9px 23px -1px rgba(0,0,0,0.17)	
-	h3
-		text-align: center
-		margin-bottom: 40px
-		color: #211a18
-		font: 400px 20px Tahoma
-		span
-			color: $def-color-fw
-	input
-		outline: 0
-		border: 0
-		border-bottom: 1px solid #c7c7c7
-		margin-bottom: 20px
-		font: 400 15px Tahoma
-		padding: 5px 0
-	textarea
-		outline: 0
-		border: 0
-		border-bottom: 1px solid #c7c7c7
-		margin-bottom: 20px;
-		height: 90px
-		resize: none
-		font: 400 15px Tahoma
-		padding: 5px 0
-	input[type="submit"]
-		background-color: #ff5c36
-		color: #fff
-		font: 400 16px Tahoma
-		padding: 20px 0
-		border-radius: 40px
-.workProcess
-	padding-bottom: 175px
-	h1
-		margin-top: 135px
-		text-align: center
-		span
-			color: $def-color-fw
-	h5
-		margin-bottom: 95px
-		text-align: center
-		color: #414141	
-		font: 400 16px Tahoma
-	.cardProcessWorkRow 
-		display: flex
-		justify-content: space-around
-	.cardWorkProcess
-		display: flex
-	.cardWorkProcess > div
-		padding-bottom: 50px
-	.cardWorkProcess > div  .iconWorkProcess
-		margin: 50px auto 25px
-	.cardWorkProcess > div  h2
-		text-align: center
-		font: 400 20px Tahoma
-		color: #fff
-	.cardWorkProcess > div .text
-		text-align: center
-		font: 400 15px Tahoma
-		color: #fff
-		width: 90%
-	.cardWorkProcess > div  button
-		width: 85%
-		background-color: #fff	
-		border: 0
-		font: 400 14px Tahoma
-		padding: 20px 0
-		border-radius: 40px
-		position: absolute
-		bottom: - 25px
-		box-shadow: 0px 9px 23px -1px rgba(0,0,0,0.17)	
-	.cardWorkProcess > div > div
-		width: 100%
-		display: flex
-		justify-content: space-around
-	.workProcessCard1
-		background-color: #4eb2f7
-	.workProcessCard2
-		background-color: #c049f8
-	.workProcessCard3
-		background-color: #817eff
-	.workProcessCard4
-		background-color: #4eb2f7
-.footer
-	background-color: #f7f7f7
-	padding-bottom: 55px
-	.keyCallBack
-		font: 400 16px Tahoma
-		border: 1px solid #eaeaea
-		background-color: #fdfdfd
-		padding-top: 20px 
-		padding-bottom: 20px 
-		border-radius: 40px
-		width: 240px
-		margin: 50px auto
-		display: block
-		transition-duration: 0.5s
-	.keyCallBack:hover
-		box-shadow: 0px 3px 23px -1px rgba(0,0,0,0.17)
-	.socLink
-		height: 50px
-		width: 50px
-		border-radius: 100%
-		display: flex
-		align-items: center
-		justify-content: space-around
-		background-color: #d3d3d3
-		cursor: pointer
-		transition-duration: 0.5s
-	.socLink:hover
-		box-shadow: 0px 0px 20px -1px rgba(0,0,0,0.17)
-		background-color: #ff6e47
-	.socLinksRow
-		display: flex
-		justify-content: space-around
-	.copyright
-		width: 100%
-		display: flex
-		align-items: center
-	.socAndCopyRow 
-		display: flex
-		align-items: center
-		color: #040404
-		font: 400 17px Tahoma
-.partnersSector
-	height: 205px
-	background-color: #fbfbfb
+	color: #b3b3b3
+	padding: 20px 0 15px
+.header form select
+	width: 280px 
+	border: 1px solid #ebebeb
+	font: 400 14px Arial
+	color: #1f1f1f
+	padding: 15px 5px
+.keyCalculate
+	width: 280px
+	padding: 15px 0	
+	margin-top: 15px
+	border-radius: 5px
+	border: none
+	font: 400 18px $one-font
+	text-transform: uppercase
+	background-color: #28a2ef
+	color: #fff
+	cursor: pointer
+.keyCalculate:hover
+	opacity: .9
+.inputPage 
+	display: flex
+	width: 280px
+	margin: 0 auto
+.inputPage  div
 	display: flex
 	align-items: center
-	img 
-		opacity: 0.3
-		cursor: pointer
-		transition-duration: 0.5s	
-	img:hover 
-		opacity: 1
-.clientSlaid
-	h1
-		margin-top: 135px
-		text-align: center
-		span
-			color: $def-color-fw
-	h5
-		margin-bottom: 95px
-		text-align: center
-		color: #414141	
-		font: 400 16px Tahoma
-.owl-item
-   width: 1000px
+	justify-content: space-around
+	text-align: center
+	cursor: pointer
+	width: 50px
+	height: 50px
+	font: 600 26px sans-serif
+	background-color: #d4d4d4
+	color: #fff
+.inputPage  div:hover
+	opacity: .9
+.inputPage input
+	padding: 15px 0px
+	width: 180px
+	text-align: center
+	font: 400 14px Arial
+	color: #1f1f1f
+	border: 1px solid #d4d4d4
+.inputDeadline
+	display: flex
+	width: 280px
+	margin: 0 auto
+.inputDeadline  div
+	display: flex
+	align-items: center
+	justify-content: space-around
+	text-align: center
+	cursor: pointer
+	width: 50px
+	height: 50px
+	background-color: #d4d4d4
+	color: #fff
+.inputDeadline  div img
+	width: 50%	
+.inputDeadline  div:hover
+	opacity: .9
+.inputDeadline input
+	padding: 15px 0px
+	width: 230px
+	text-align: center
+	font: 400 14px Arial
+	color: #1f1f1f
+	border: 1px solid #d4d4d4
+.totalPrice b
+	font: 400 45px $two-font
+.getYour > .container
+	display: flex
+	align-items: center
+.getYour > .container > div
+	width: 33%
+	float: left
+	box-sizing: border-box
+	padding: 0 20px
+.sectorGetYour1
+	.cardsGetYour
+		float: left
+		margin: 80px 0
+		display: flex
+		align-items: center
+	.cardsGetYour > div
+		float: left
+		width: 255px
+		padding-right: 20px
+		box-sizing: border-box
+	.cardsGetYour
+		float: left
+	.cardsGetYour h3
+		font: 400 20px Arial
+		text-transform: uppercase
+		text-align: right
+	.textGetYor 
+		font: 400 14px Arial
+		text-align: right
+	.cardsGetYour img
+		float: right
+	.cardsGetYour span
+		background-position: center bottom
+		background-repeat: no-repeat
+		width: 90px
+		height: 90px
+		display: block
+		float: left
+.cardGetYour1
+	background-image: url("../images/getYourIcon1.png")
+.cardGetYour2
+	background-image: url("../images/getYourIcon2.png")
+.cardGetYour3
+	background-image: url("../images/getYourIcon3.png")
+.cardGetYour4
+	background-image: url("../images/getYourIcon4.png")
+.sectorGetYour3
+	.cardsGetYour
+		float: left
+		margin: 80px 0
+		display: flex
+		align-items: center
+		flex-direction: row-reverse;
+	.cardsGetYour > div
+		float: left
+		width: 255px
+		margin-left: 20px
+		box-sizing: border-box
+	.cardsGetYour
+		float: left
+	.cardsGetYour h3
+		font: 400 20px Arial
+		text-transform: uppercase
+		text-align: left
+	.textGetYor 
+		font: 400 14px Arial
+		text-align: left
+	.cardsGetYour img
+		float: right
+	.cardsGetYour span
+		background-position: center bottom
+		background-repeat: no-repeat
+		width: 90px
+		height: 90px
+		display: block
+		float: left
+.sectorGetYour2
+	display: flex
+	align-items: center
+.getYourTitle
+	display: block
+	font: 400 36px $two-font
+	text-align: center
+	color: #adacac
+.help
+	padding: 70px 0
+.help h2
+	text-align: center
+	font: 400 36px $two-font
+	color: #4b4c4c
+.textHelp
+	width: 60%
+	margin: 0 auto
+	padding: 40px 40px
+	border-radius: 10px
+	box-sizing: border-box
+	font: 400 20px Arial
+	text-align: center
+	color: #fff
+	background-color: #28a2ef
+.content > .container 
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+.cardsContent
+	width: 575px
+	max-width: 50%
+	padding: 40px
+	margin: 40px 0px
+	box-sizing: border-box
+	float: left
+	background-image: url("../images/paperPage.png")
+	background-size: cover
+	background-repeat: no-repeat
+.cardsContent h2
+	font: 400 24px $two-font
+	color: #000
+.cardsContent button
+	margin-top: 50px
+	padding: 10px 40px
+	border-radius: 5px
+	border: none
+	font: 400 21px $two-font
+	text-transform: uppercase
+	color: #fff
+	background-color: #6bcdff
+	cursor: pointer
+.cardsContent button:hover
+	opacity: .8
+.textCardContent
+	max-width: 90%
+	font: 400 18px Arial

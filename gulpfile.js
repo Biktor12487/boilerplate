@@ -40,7 +40,7 @@ gulp.task("templates", function() {
 gulp.task("sass", function() {
 	return gulp.src("sass/*.sass")
 	.pipe(sass({errLogToConsole: true, outputStyle: 'expanded'}))
-	.pipe(autoprefixer({browsers: ['last 2 versions'], cascade: false}))
+	.pipe(autoprefixer({browsers: ['last 4 versions'], cascade: false}))
 	.pipe(gulp.dest("dist/css"))
 	.pipe(browserSync.stream());
 });
